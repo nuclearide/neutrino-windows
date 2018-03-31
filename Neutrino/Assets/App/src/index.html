@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../node_modules/mocha/mocha.css"/>
+    </head>
+    <body>
+        <div id="mocha"></div>
+        <script>
+        window['__NEUTRINO_SEND_MESSAGE'] = (arg) => {
+            external.notify(arg);
+        }
+        </script>
+        <script src="./index.ts"></script>
+    </body>
+</html>
